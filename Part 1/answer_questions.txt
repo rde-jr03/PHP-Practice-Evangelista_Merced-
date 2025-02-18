@@ -1,1 +1,144 @@
- 
+print_r('Hello');
+print_r([1,2,3]);
+
+class Person {
+  public $name;
+  public $age;
+}
+
+$person = new Person();
+$person->name = "Alice";
+$person->age = 25;
+
+QUESTION 1: What is the output of print_r($person);?
+ANSWER: 
+
+
+
+var_dump('Hello');
+var_dump([1,2,3]);
+
+QUESTION 2: What is the output of var_dump($person);?
+ANSWER:
+
+
+$name = 'Brad';
+$age = 40;
+$hasKids = true;
+$cashOnHand = 10.5;
+
+QUESTION 3: What is the output of var_dumps($cashOnHand);?
+ANSWER: 
+
+
+echo "$name is $age years old";
+echo "${name} is ${age} years old";
+echo '<h3>' . $name . ' is ' .$age . ' years old</h3>';
+
+QUESTION 4: What character is used to concatenate strings?
+ANSWER:
+
+
+define('HOST', 'localhost');
+define('USER', 'root');
+
+QUESTION 5: What is the output of echo HOST;?
+ANSWER:
+QUESTION 6: How will you define in PHP the variable PI with value 3.1416?
+ANSWER:
+
+
+
+$color = ["red", "green", "blue"];
+echo $colors[0];
+$numbers = [1, 2, 3, 4, 5];
+
+QUESTION 7: What is the output of echo $numbers[3] + $numbers[4];?
+ANSWER:
+QUESTION 8: What is the output of echo $colors[3];?
+ANSWER:
+
+
+$person = [
+ "first_name" => "John",
+ "last_name" => "Doe",
+ "age" => 30
+];
+echo $person["first_name"];
+
+QUESTION 9: What are the keys in $person array?
+ANSWER:
+
+
+
+$colors = [
+ 1 => 'red',
+ 2 => 'green',
+ 3 => 'blue',
+];
+
+QUESTION 10: In PHP, how will you change the green into white $colors array?
+ANSWER:
+
+
+
+$hex = [
+ 'red' => '#f00',
+ 'green' => '#0f0',
+ 'blue' => '#00f',
+];
+
+QUESTION 11: What is the output of echo $hex['red'];?
+ANSWER: 
+
+
+$matrix = [
+ [1, 2, 3],
+ [4, 5, 6],
+ [7, 8, 9]
+];
+echo $matrix[1][2];
+
+QUESTION 12: What is the output of echo$matrix[1][2];?
+ANSWER:
+
+
+$person1 = [
+ 'first_name' => 'Maeve',
+ 'last_name' => 'Reid',
+ 'email' => 'reid@gmail.com',
+];
+
+$people = [
+ $person1,
+[
+ 'first_name' => 'John',
+ 'last_name' => 'Doe',
+ 'email' => 'john@gmail.com',
+]
+[
+ 'first_name' => 'Jane',
+ 'last_name' => 'Doe',
+ 'email' => 'jane@gmail.com',
+],
+];
+
+QUESTION 13: What is the output of echo$people[0]['first_name'];?
+ANSWER:
+QUESTION 14: What is the output of echo$people[2]['email'];?
+ANSWER:
+
+
+$chunkedArray = array_chunks($fruits, 2);
+
+QUESTION 15: What is the output of var_dump($chunkedArray);?
+ANSWER: 
+
+
+
+
+
+
+
+
+
