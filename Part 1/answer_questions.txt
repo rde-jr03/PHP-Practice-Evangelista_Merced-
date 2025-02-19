@@ -12,11 +12,7 @@ $person->age = 25;
 
 QUESTION 1: What is the output of print_r($person);?
 ANSWER: 
-Person Object
-(
-    [name] => Alice
-    [age] => 25
-)
+HelloArray ( [0] => 1 [1] => 2 [2] => 3 ) Person Object ( [name] => Alice [age] => 25 ) 1
 
 
 
@@ -25,12 +21,7 @@ var_dump([1,2,3]);
 
 QUESTION 2: What is the output of var_dump($person);?
 ANSWER: 
-object(Person)#1 (2) {
-  ["name"]=>
-  string(5) "Alice"
-  ["age"]=>
-  int(25)
-}
+HelloArray ( [0] => 1 [1] => 2 [2] => 3 ) object(Person)#1 (2) { ["name"]=> string(5) "Alice" ["age"]=> int(25) }
 
 
 $name = 'Brad';
@@ -38,7 +29,7 @@ $age = 40;
 $hasKids = true;
 $cashOnHand = 10.5;
 
-QUESTION 3: What is the output of var_dumps($cashOnHand);?
+QUESTION 3: What is the output of var_dump($cashOnHand);?
 ANSWER: float(10.5)
 
 
@@ -62,7 +53,7 @@ ANSWER: define('PI', 3.1416);
 
 
 
-$color = ["red", "green", "blue"];
+$colors = ["red", "green", "blue"];
 echo $colors[0];
 $numbers = [1, 2, 3, 4, 5];
 
@@ -70,7 +61,7 @@ QUESTION 7: What is the output of echo $numbers[3] + $numbers[4];?
 ANSWER: 9
 
 QUESTION 8: What is the output of echo $colors[3];?
-ANSWER: there is no index 3 in the array
+ANSWER: red
 
 
 
@@ -143,7 +134,7 @@ $people = [
 ];
 
 QUESTION 13: What is the output of echo$people[0]['first_name'];?
-ANSWER: John
+ANSWER: Maeve
 
 QUESTION 14: What is the output of echo$people[2]['email'];?
 ANSWER: jane@gmail.com
@@ -151,10 +142,26 @@ ANSWER: jane@gmail.com
 
 $fruits = ['apple', 'banana', 'orange'];
 echo count($fruits);
-$chunkedArray = array_chunks($fruits, 2);
+$chunkedArray = array_chunk($fruits, 2);
 
 QUESTION 15: What is the output of var_dump($chunkedArray);?
 ANSWER: 
+3
+array(2) {
+  [0]=>
+  array(2) {
+    [0]=>
+    string(5) "apple"
+    [1]=>
+    string(6) "banana"
+  }
+  [1]=>
+  array(1) {
+    [0]=>
+    string(6) "orange"
+  }
+}
+
 
 
 
